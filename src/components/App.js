@@ -8,7 +8,7 @@ console.log(blogData);
 
 function App() {
 
-  const {image, name, about} = blogData
+  const {image, name, about, posts, } = blogData
 
   return (
     <div className="App">
@@ -16,7 +16,7 @@ function App() {
       the browser as you write your code; and good luck!
       <Header name={name}/>
       <About image={image} about={about}/>
-      <ArticleList/>
+      <ArticleList posts={posts}/>
     </div>
   );
 }
